@@ -17,4 +17,13 @@ public class UserController {
         return "variable-expresson";
 
     }
+
+
+    // handler method to handle selection expressions
+
+    public String  selectionExpressi(Model model){
+        User user = new User("Prince", "ntimza@gmail.com","admin","java");
+        model.addAttribute("user", user);
+        return "variable-expresson";
+    }
 }
